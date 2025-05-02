@@ -1,0 +1,135 @@
+type: collection.insomnia.rest/5.0
+name: Staff-project
+meta:
+  id: wrk_b8015b9866504441a7136e505d94f6e8
+  created: 1745956737574
+  modified: 1746205439463
+collection:
+  - url: http://localhost:8080/staff
+    name: POST
+    meta:
+      id: req_a296df2e06c6431a9195eb75acf72625
+      created: 1745956746004
+      modified: 1746205543330
+      isPrivate: false
+      sortKey: -1745956746004
+    method: POST
+    body:
+      mimeType: application/json
+      text: |+
+        {
+        	"id":1,
+          "name": "Yahye Omar",
+          "role": "ENg"
+        }
+
+    parameters:
+      - id: pair_f7f3b31830914aa5bf9d62907b3ad375
+        value: Ali
+        disabled: false
+      - id: pair_d1e11dbefbbd4d6e84b7073c8fd58a55
+        name: "1"
+        value: Osman
+        disabled: false
+      - id: pair_73855b7ca632438291ee7c1794511674
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/staff
+    name: Get
+    meta:
+      id: req_e0dad66e53d043efa5de03ab6cd7621f
+      created: 1746205586967
+      modified: 1746205633134
+      isPrivate: false
+      sortKey: -1746205586967
+    method: GET
+    body:
+      mimeType: application/json
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/staff/1
+    name: PUT
+    meta:
+      id: req_7cb60933a076420399d17cb78bdd9a4e
+      created: 1746205951676
+      modified: 1746206119746
+      isPrivate: false
+      sortKey: -1746205951676
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        	"name":"Faarax",
+        	"role":"HR"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/not-found
+    name: not-found
+    meta:
+      id: req_5a17cbd6c73341febd3eac8cac1754fe
+      created: 1746206184916
+      modified: 1746206223851
+      isPrivate: false
+      sortKey: -1746206184916
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1c45686c830d87f9210c90ea3727475bc666331d
+    created: 1745956737581
+    modified: 1745956737581
+environments:
+  name: Base Environment
+  meta:
+    id: env_1c45686c830d87f9210c90ea3727475bc666331d
+    created: 1745956737578
+    modified: 1745956737578
+    isPrivate: false
